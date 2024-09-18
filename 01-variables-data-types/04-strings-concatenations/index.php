@@ -1,15 +1,9 @@
 <?php
 
-echo 'Hello bagot sa internet-yehey';
-echo '<br>';
-// may also use code below to display
-print '<br>';
-print 'Hello bagot sa internet-yehey';
-print '<br>';
-print '<br>';
+$first_name = "Maria";
+$last_name = "Clara";
 
-echo 'This is line 1', '<br>', 'This is line 2';
-
+$full_name = $first_name . " " . $last_name;
 ?>
 
 <!DOCTYPE html>
@@ -32,14 +26,12 @@ echo 'This is line 1', '<br>', 'This is line 2';
     </header>   
     <div class="container mx-auto p-4 mt-4">
         <div class="bg-white rounded-lg shadow-md p-6">
-        <h2 class="text-2xl font-semibold mb-4">Welcome To The Bootcamp</h2>
-        <!-- the same as the next line -->
-        <h2 class="text-2xl font-semibold mb-4"><?= 'Welcome To The Bootcamp' ?></h2>
-        <p>In this bootcamp, you will learn the fundamentals of the PHP language</p>
-        </div>
+        <!-- Output -->
+        <pclass="text-xl"><?= "Hello, my name is $full_name."?></p>
+        <?php echo ($full_name) ?>
     </div>
-    <h2> hello </h2>
-    <h2> hello </h2>
+    </div>
+   
 
 </body>
 </html>
