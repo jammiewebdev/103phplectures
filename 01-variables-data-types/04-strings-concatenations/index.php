@@ -3,7 +3,9 @@
 $first_name = "Maria";
 $last_name = "Clara";
 
-$full_name = $first_name . " " . $last_name;
+$full_name = $first_name . " " . $last_name; 
+//to combine - use period - space - enclose in quotation marks
+
 ?>
 
 <!DOCTYPE html>
@@ -27,7 +29,17 @@ $full_name = $first_name . " " . $last_name;
     <div class="container mx-auto p-4 mt-4">
         <div class="bg-white rounded-lg shadow-md p-6">
         <!-- Output -->
-        <pclass="text-xl"><?= "Hello, my name is $full_name."?></p>
+        <p class="text-xl"><?= 'Hello, my name is ' . $full_name; ?></p>
+        
+        <p class="text-xl"><?= "Hello, my name is $full_name" ; ?></p>
+        
+        <p class="text-xl"><?= 'Hello, my name is $full_name' ; ?></p>
+        
+        <!-- Double Quote -->
+        <p class="text-xl"><?= "Hello, my name is {$full_name}" ; ?></p>
+        <p class="text-xl"><?= "Hello, my name is \"Jun\"" ; ?></p>
+
+
         <?php echo ($full_name) ?>
     </div>
     </div>
