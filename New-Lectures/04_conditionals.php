@@ -51,7 +51,7 @@
 $posts = [];
 
 if(empty($posts)){
-    echo 123;
+    echo 1234;
 }
 
 ?>
